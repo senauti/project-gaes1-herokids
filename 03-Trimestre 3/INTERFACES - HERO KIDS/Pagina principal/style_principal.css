@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding-top: 0px;
+  padding-bottom: 40px;
+  background-color: #faf3e4;
+}
+
+.card {
+  width:"30";
+  height:"30";
+}
