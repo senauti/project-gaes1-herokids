@@ -1,20 +1,16 @@
 # PROYECTO - HERO KIDS
 ## Objetivo general
-Desarrollar una aplicación mediante la cual, su sistema permita el manejo de la información personal y de contacto
-de las directivas y estudiantes del jardin, para brindarle comodidad y facilidad al usuario.
+Desarrollar un sistema mediante el cual brinde solución a las áreas afectadas del jardín, permitiendo el manejo de la información de los integrantes, para así brindarle comodidad y facilidad al usuario.
 ## Objetivos especificos
 - Brindar un espacio donde puedan acceder a la información personal y de contacto de una forma más rápida y segura.
-- Proporcionar un espacio que permita de una forma más rápida el manejo de los tràmites del jardín.
-- Acceder a un espacio el cual proporciona información de una forma rápida y segura, ayudando a la organización 
-de los eventos del jardín.
+- Proporcionar un espacio que permita el manejo de los trámites y las citas dentro del jardín.
+- Acceder a un espacio el cual proporcione la información de una forma más pronta y segura, ayudando a la organización de los eventos del jardín.
 ## Planteamiento del problema
-Sabemos que los jardines infantiles cuentan con una gran variedad de problemáticas, dentro de ellas se encuentra:
-- Dificultades al compartir publicaciones informativas con los acudientes
-- Poca agilidad al realizar los trámites internos del jardín 
-- Al revisar la información personal es poco práctico ya que al momento de buscar lo requerido se busca en una carpeta
-con varia documentación.
-Aquellas necesidades limitan el desarrollo del jardín y afectan a los usuarios del jardín; al abordar este problema dará
-beneficio a la evolución de los jardines infantiles y brindará mejoras en su funcionamiento.
+Identificamos tres principales problemáticas en el jardín infantil, a las cuales les brindamos una solución por medio de nuestros módulos. Estas son:
+- Poca agilidad al momento de visualizar la información personal de los integrantes del jardín.
+- Demora al momento de realizar la solicitud de cupos y dificultades al momento de solicitar una cita con algún integrante del jardín. 
+- Ineficiencia al momento de crear, modificar, eliminar o comunicar un nuevo evento a todos los involucrados.
+Estas problemáticas limitan el desarrollo del jardín y afectan a los usuarios del jardín; al abordar este problema dará beneficio a la evolución de los jardines infantiles y brindará mejoras en su funcionamiento.
 ## Justificación
 Nos proponemos solucionar las necesidades de los diversos jardines infantiles, mejorando la práctica y la rapidez a la
 hora de realizar los trámites internos del jardín. Brindando un mejor espacio más rápido y efectivo el traspaso de 
