@@ -10,6 +10,7 @@ Identificamos tres principales problemáticas en el jardín infantil, a las cual
 - Poca agilidad al momento de visualizar la información personal de los integrantes del jardín.
 - Demora al momento de realizar la solicitud de cupos y dificultades al momento de solicitar una cita con algún integrante del jardín. 
 - Ineficiencia al momento de crear, modificar, eliminar o comunicar un nuevo evento a todos los involucrados.
+
 Estas problemáticas limitan el desarrollo del jardín y afectan a los usuarios del jardín; al abordar este problema dará beneficio a la evolución de los jardines infantiles y brindará mejoras en su funcionamiento.
 ## Justificación
 Nos proponemos solucionar las necesidades de los diversos jardines infantiles, mejorando la práctica y la rapidez a la
