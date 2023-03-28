@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAMITES</title>
+
+    <link rel="stylesheet" href="contactenos/contectenos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+</head>
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    .gestion{
+      width: 30%;
+      height: 30% ;
+    }
+    .mb-3{
+      width: 20%;
+    }
+    .ventana-contactenos{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4.0;
+  }
+  .btn{
+    background-color:#ff5303 ;
+    color: azure;
+  }
+  
+  
+    
+  </style>
+
+  <link href="tramites/tramites.css" rel="stylesheet">
+</head>
+<body>
+  
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol id="check" viewBox="0 0 16 16">
+  <title>Check</title>
+  <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</symbol>
+</svg>
+
+<div class="container py-3">
+<header>
+  <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+    <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+      <img style="width:15%; height: 15%;" src="contactenos/imagenes/logo_comarca-removebg-preview.png" alt="logo comarca">
+      <span class="fs-4"> <font face="cambria,arial,verdana"><b>HERO KIDS</b></font> </span>
+    </a>
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+      <a class="me-3 py-2 " href="gestion.html"> <button type="submit" class="btn btn-light"> <font face="cambria,arial,verdana">GESTION USUARIOS</font></button></a>        
+      <a class="me-3 py-2 text-dark text-decoration-none" href="#">  <button type="submit" class="btn btn-light"> <font face="cambria,arial,verdana">TRAMITES</font></button></a>
+      <a class="me-3 py-2 text-dark text-decoration-none" href="calendario_ene.html"> <button type="submit" class="btn btn-light"> <font face="cambria,arial,verdana">CALENDARIO</font></button> </a>
+      <div class="ventana-contactenos" id="ventana"
+      style="background-color: #ffc684 ; 
+      width: 35%;
+      height: 48%; 
+      color: black; 
+      font-family: Arial, Helvetica, sans-serif; 
+      font-size: 18px;text-align:center;padding: 33px;
+      min-height: 250px;
+      border-radius: 35px;
+      position: absolute;
+      left: 33%;
+      top: 33%;
+      display: none;">
+      <img style="position: absolute; left: 1%; top:4px;" src="contactenos/imagenes/logo_comarca-removebg-preview.png" alt="logo la comarca">
+     
+      <div id="cerrar"> <a href="javascript:cerrar()"> <img style="position: absolute; right: 1%; top:4px;" src="contactenos/imagenes/icons8-macos-cerrar-30.png" alt="" > </a></div>
+      
+      <font   face="cambria,arial,verdana" style="color: #ff5303; width: 30px; font-size: 30px;text-align:right;padding: 33px; position: absolute; left: 33%; top: 0.5%;" ><b>¡CONTACTANOS!</b></font> 
+      <br>
+      <br>
+      <font face="cambria,arial,verdana" style="color:rgb(0, 0, 0); width: 30px; font-size: 15px;text-align:right;padding: 33px; position: absolute; right: 50%; nav-down: 10%;"><img style="position: absolute; left: 5%;" src="contactenos/imagenes/icons8-email-24.png" alt="arroba"> jardinlacomarca@gmail.com</font>
+      <br>
+      
+      <font face="cambria,arial,verdana" style="color:rgb(0, 0, 0); width: 30px; font-size: 15px;text-align:right;padding: 33px; position: absolute; right: 50%; nav-down: 10%;"> <img style="position: absolute; left: 3%; width: 28%; height: 28%;" src="contactenos/imagenes/icons8-tel+®fono-sin-utilizar-24.png" alt="ceuluar">Tel:7035782</font>
+      <br>
+      
+      <font face="cambria,arial,verdana" style="color:rgb(0, 0, 0); width: 30px; font-size: 15px;text-align:right;padding: 33px; position: absolute; right: 50%; nav-down: 10%;"> <img style="position: absolute; left: 3%; width: 28%; height: 28%;" src="contactenos/imagenes/icons8-tel+®fono-celular-50.png" alt="telefono">Cel:3118295551</font>
+      <br>
+      
+      <font face="cambria,arial,verdana" style="color:rgb(0, 0, 0); width: 30px; font-size: 15px;text-align:right;padding: 33px; position: absolute; right: 50%; nav-down: 10%;"> <img style="position: absolute; left: 3%; width: 28%; height: 28%;" src="contactenos/imagenes/icons8-compra-entregada-24.png" alt="direccion"> CL&nbsp;59&nbsp;#3&nbsp;-56</font>
+
+
+
+  </div>
+  <header></header>
+  <nav></nav>
+  <section id="contenedor">
+      <a href="javascript:abrir()"> <img src="index/imagenes/icons8-mensaje-en-cuadrado-50.png" alt=""></a> 
+  </section>
+
+  <script> 
+      function abrir(){
+          document.getElementById("ventana").style.display="block";
+      }
+      function cerrar(){
+          document.getElementById("ventana").style.display="none";
+      }
+  </script>
+  
+      <a class="py-2 " href="error404.html"> <img style="border-radius: 1%;" src="index/imagenes/icons8-usuario-32.png" alt="usuario"> </a>
+    </nav>
+  </div>
+
+  
+    <button style="border: none; padding: 2% 400px;" class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#cupos" aria-expanded="false" aria-controls="cupos">
+      SOLICITUD CUPOS
+    </button>
+    <br>
+    <br>
+    <br>
+    <button style="border: none; padding: 2% 430px;" class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#citas" aria-expanded="false" aria-controls="citas">
+      CITACION
+    </button>
+  
+  <div style="min-height: 120px;">
+    <div class="collapse collapse-horizontal" id="cupos" >
+      <div class="card card-body" style="width: 300px;">
+        <form>
+          <H1> <font face="cambria,arial,verdana"><b>SOLICITUD DE CUPOS</b></font></H1>
+          <br>
+          <H5> <font face="cambria,arial,verdana"><b>ESTUDIANTE</b></font></H5>
+          <div class="form-floating">
+              <input type="number" id="floatingInputValue" value="date" class="form-control" placeholder="Fecha de Nacimiento">
+              <label><font face="cambria,arial,verdana">Número de identificación</font></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="nombres_est" class="form-control" id="floatingInput" placeholder="nombre ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Nombre</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="1_apellido_est" class="form-control" id="floatingInput" placeholder="apellido ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Primer apellido</font></a></li></label>
+          </div>
+          
+          <div class="form-floating">
+              <input type="2_apellido_est" class="form-control" id="floatingInput" placeholder="apellido ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Segundo apellido</font></a></li></label>
+          </div>
+     
+          <div class="form-floating">
+              <input type="date" id="floatingInputValue" value="date" class="form-control" placeholder="Fecha de Nacimiento">
+              <label><font face="cambria,arial,verdana">Fecha de nacimiento</font></label>
+          </div>
+  
+          <select class="form-select">
+              <div >
+                  <option selected>Género</option>
+                  <option href="#">Mujer</option>
+                  <option value="2">Hombre</option>
+                  <option type="3">Otro</option>
+              </div>
+          </select>
+                  
+  
+          <div class="form-floating">
+              <input type="number" class="form-control" id="floatingInput" placeholder="apellido ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Edad</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@ejemplo.com">
+              <label for=""><font face="cambria,arial,verdana">Dirección</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@ejemplo.com">
+              <label for=""><font face="cambria,arial,verdana">Tipo RH</font></a></li></label>
+          </div>
+          
+          <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@ejemplo.com">
+              <label for=""><font face="cambria,arial,verdana">Nombre EPS</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="name@ejemplo.com">
+              <label for=""><font face="cambria,arial,verdana">Tipo de afiliación</font></a></li></label>
+          </div>
+  
+          <br>
+  
+          <H5> <font face="cambria,arial,verdana"><b>ACUDIENTE</b></font></H5>
+          
+          <select class="form-select">
+              <div >
+                  <option selected>Tipo de Identificación</option>
+                  <option href="#">Cédula de identificación</option>
+                  <option value="2">Tarjeta de extranjería</option>
+              </div>
+          </select>
+  
+          <div class="form-floating">
+              <input type="number" id="floatingInputValue" value="date" class="form-control" placeholder="Fecha de Nacimiento">
+              <label><font face="cambria,arial,verdana">Número de identificación</font></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="nombres_est" class="form-control" id="floatingInput" placeholder="nombre ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Nombre</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="1_apellido_est" class="form-control" id="floatingInput" placeholder="apellido ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Primer apellido</font></a></li></label>
+          </div>
+          
+          <div class="form-floating">
+              <input type="2_apellido_est" class="form-control" id="floatingInput" placeholder="apellido ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Segundo apellido</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="number" class="form-control" id="floatingInput" placeholder="apellido ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Número de contacto</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="2_apellido_est" class="form-control" id="floatingInput" placeholder="apellido ejemplo">
+              <label for=""><font face="cambria,arial,verdana">Parentesco</font></a></li></label>
+          </div>
+  
+          </div>    
+              <br>
+              <button class="w-100 btn btn-lg btn-success" type="submit"><font face="cambria,arial,verdana">Enivar</font></button>
+      
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <div style="min-height: 187px;">
+    <div class="collapse collapse-horizontal" id="citas">
+      <div class="card card-body" style="width: 300px;">
+        <form action="index.html">
+          <H1> <font face="cambria,arial,verdana"><b>CITACIÓN</b></font></H1>
+        
+          <div class="form-floating">
+              <input type="date" id="floatingInputValue" value="date" class="form-control" placeholder="Fecha de Nacimiento">
+              <label><font face="cambria,arial,verdana">Fecha</font></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="time" id="floatingInputValue" value="time" class="form-control" placeholder="Fecha de Nacimiento">
+              <label><font face="cambria,arial,verdana">Hora</font></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="quien" class="form-control" id="floatingInput" placeholder="nombre ejemplo">
+              <label for=""><font face="cambria,arial,verdana">A quién cita</font></a></li></label>
+          </div>
+  
+          <div class="form-floating">
+              <input type="texttarea" class="form-control" id="floatingInput" placeholder="motivo">
+              <label for=""><font face="cambria,arial,verdana">Mótivo</font></a></li></label>
+          </div>  
+              <br>
+              <button class="w-100 btn btn-lg btn-success" type="submit"><font face="cambria,arial,verdana">Enivar</font></button>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+      </div>
+      <div class="col-7 col-md">
+        
+        <ul class="list-unstyled text-small">
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Jardín: CALLE 59 # 3-56 </a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">tel: 7035782</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cel: 311 829 55 51   </a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Casa Maternal: CRA 3a # 58 -67 </a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#"> tel: 694 72 00 </a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cel: 319 243 82 82</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">jardinlacomarca@gmail.com</a></li>
+         
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <ul class="list-unstyled text-small">
+          <img id="la-comarca" style="position: absolute; left: 55%; width: 15%; height: 10%;"src="index/imagenes/LACOMARCA-removebg-preview.png" alt=" la comarca">
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
