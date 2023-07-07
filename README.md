@@ -25,4 +25,4 @@ mayor comodidad. Pretendemos ir actualizando la aplicación según los nuevos fu
 futuro nos asociaremos con aplicaciones que contengan juegos infantiles para brindar un mejor servicio.
 ## Integrantes 
 - Yuri Natalia López García
-- Damaris Arango Perdomo- Giselle Dayanna Marbello Quintero 
+- Giselle Dayanna Marbello Quintero 
